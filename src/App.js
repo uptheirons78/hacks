@@ -4,22 +4,16 @@ import './App.css';
 
 class App extends Component {
   render() {
+    let mySentence = 'Welcome to my React App';
+    let user = { firstName: 'Mauro', lastName: 'Bono' };
     return (
+      //this is JSX syntax
+      //N.B. remember to use className instead of class!
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h2>{mySentence}</h2>
+        <h4>
+          My name is {user.firstName} {user.lastName}
+        </h4>
       </div>
     );
   }
